@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# secrets
+.env
+*.env.local
+backend/.jwt-secret
+
+# private student data (real records) - these files are created automatically on first run
+backend/data/*.json
+backend/data/.seed-complete
+backend/data/*.tmp
+backend/backups/
+
+# uploaded files (assignments and student submissions) - keep the folders only
+backend/uploads/assignments/*
+backend/uploads/submissions/*
+!backend/uploads/assignments/.gitkeep
+!backend/uploads/submissions/.gitkeep
+
+# build output and logs
+frontend/dist/
+*.log
+.DS_Store
+!backend/data/.gitkeep
